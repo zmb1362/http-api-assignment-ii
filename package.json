@@ -20,5 +20,14 @@
     "underscore": "^1.13.2",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmb1362/http-api-assignment-ii.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zmb1362/http-api-assignment-ii/issues"
+  },
+  "homepage": "https://github.com/zmb1362/http-api-assignment-ii#readme"
 }

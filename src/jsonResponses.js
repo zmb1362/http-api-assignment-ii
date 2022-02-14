@@ -19,7 +19,7 @@ const getUsers = (request, response) => {
   respondJSON(request, response, 200, responseJSON);
 };
 
-//function to add a user from a POST body
+// function to add a user from a POST body
 const addUser = (request, response, body) => {
   const responseJSON = {
     message: 'Name and age are both required.',
@@ -32,7 +32,7 @@ const addUser = (request, response, body) => {
 
   let responseCode = 204;
 
-  if(!users[body.name]) {
+  if (!users[body.name]) {
     responseCode = 201;
     users[body.name] = {};
   }
@@ -49,12 +49,12 @@ const addUser = (request, response, body) => {
 };
 
 const notReal = (request, response) => {
-    const responseJSON = {
-      message: 'The page you are looking for was not found.',
-      id: 'notFound',
-    };
-  
-    respondJSON(request, response, 404, responseJSON);
+  const responseJSON = {
+    message: 'The page you are looking for was not found.',
+    id: 'notFound',
+  };
+
+  respondJSON(request, response, 404, responseJSON);
 };
 
 module.exports = {
