@@ -19,6 +19,10 @@ const getUsers = (request, response) => {
   respondJSON(request, response, 200, responseJSON);
 };
 
+const getUsersMeta = (request, response) => {
+  return respondJSONMeta(request, response, 200);
+};
+
 // function to add a user from a POST body
 const addUser = (request, response, body) => {
   const responseJSON = {
@@ -57,8 +61,14 @@ const notReal = (request, response) => {
   respondJSON(request, response, 404, responseJSON);
 };
 
+const notRealMeta = (request, response) => {
+  return respondJSONMeta(request, response, 404);
+};
+
 module.exports = {
   getUsers,
+  getUsersMeta,
   addUser,
   notReal,
+  notRealMeta,
 };
